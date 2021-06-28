@@ -1,0 +1,92 @@
+METHOD OVERLOADING
+==========================================================
+public class pl 
+{
+	void meth1()
+	{
+		System.out.println("pl meth1 called");
+	}
+	void meth1(int a)
+	{
+	System.out.println(a);	
+	}
+	void meth1(String s)
+	{
+		System.out.println(s);
+	}
+	pl(int a)
+	{
+	System.out.println(a);	
+	}
+	pl()
+	{
+		System.out.println("pl() called");
+	}
+}
+===========================================================
+METHOD OVERRIDDING
+=====================================================
+public class pl 
+{
+	void meth1()
+	{
+		System.out.println("pl meth1 called");
+	}
+	void meth1(int a)
+	{
+	System.out.println(a);	
+	}
+	void meth1(String s)
+	{
+		System.out.println(s);
+	}
+	pl(int a)
+	{
+	System.out.println(a);	
+	}
+	pl()
+	{
+		System.out.println("pl() called");
+	}
+}
+===============================================================
+
+public class pll extends pl
+{
+	 pll()
+	{
+		 super(5);	
+		 System.out.println("pll() called");
+	}
+	void meth1()
+	{
+	System.out.println("meth1 called");	
+	}
+	void meth1(int a)
+	{
+	System.out.println(a);	
+	}
+	void meth1(String s)
+	{
+		System.out.println(s);
+	}
+	public static void main(String[] args) 
+	{
+		pl obj =new pll();
+		obj.meth1();
+		obj.meth1(4);
+		obj.meth1("elli");
+		
+		
+	}
+	
+}
+================================================================
+
+
+
+
+
+
+
+
