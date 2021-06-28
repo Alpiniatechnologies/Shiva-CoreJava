@@ -1,0 +1,42 @@
+inheritance concept
+=====================================================
+public class ClassA 
+{
+	void display()
+	{
+		System.out.println("hello");
+	}
+	ClassA()
+	{
+		System.out.println("ClassA() called");
+	}
+}
+==========================================================
+public class ClassB extends ClassA
+{
+	void show()
+	{
+		System.out.println("show method called");
+	}
+	public static void main(String[] args) 
+	{
+		ClassA obj=new ClassB();
+		obj.display();
+		
+	}
+
+}
+=============================================================
+public class ClassD extends ClassB
+{
+	public static void main(String[] args)
+	{
+		ClassB obj1=new ClassD();
+		obj1.show();
+		obj1.display();
+		
+		
+	}
+
+}
+===================================================
