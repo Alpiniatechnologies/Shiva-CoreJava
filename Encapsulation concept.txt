@@ -1,0 +1,38 @@
+Encapsulation concept
+=================================================================================================
+public class demo 
+{
+	private String Studentname;  // Shortcut key for getter and setter method
+	private int Studentrollnum;  //  alt + shift + s
+	
+	public String getStudentname() {
+		return Studentname;
+	}
+	public void setStudentname(String studentname) {
+		Studentname = studentname;
+	}
+	public int getStudentrollnum() {
+		return Studentrollnum;
+	}
+	public void setStudentrollnum(int studentrollnum) {
+		Studentrollnum = studentrollnum;
+	}
+	
+}
+=================================================================================================
+
+public class demo1 
+{
+	public static void main(String[] args) 
+	{
+		demo obj = new demo();	
+		obj.setStudentrollnum(7);
+		int snum = obj.getStudentrollnum();
+		System.out.println("Student rolnum===> "+snum);
+		
+		obj.setStudentname("shiva");
+		String sname= obj.getStudentname();
+		System.out.println("Student name===> "+sname);
+	}
+}
+=============================================================================================================
